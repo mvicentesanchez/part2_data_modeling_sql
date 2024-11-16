@@ -1,4 +1,4 @@
-#Part 2: Data Modeling with SQL
+# Part 2: Data Modeling with SQL
 
 Scenario: As part of a data warehousing initiative, you are required to design a data mart for analyzing sales data. The data mart should be designed using the Data Vault modeling approach. You need to create SQL scripts to define the structure of the data mart.
 Task: 
