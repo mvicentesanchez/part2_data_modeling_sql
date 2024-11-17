@@ -25,6 +25,11 @@ WHERE last_modified_date > (
     WHERE table_name = 'hubproduct'
 );
 
+-- Integramos claves sustitutas (surrogate keys) en el proceso ETL
+
+ALTER TABLE hubproduct
+ADD COLUMN surrogate_key INT AUTO_INCREMENT PRIMARY KEY;
+
 -- Actualizamos en la tabla original
 
 INSERT INTO hubproduct (

@@ -25,6 +25,11 @@ WHERE last_modified_date > (
     WHERE table_name = 'linkproductocustomer'
 );
 
+-- Integramos claves sustitutas (surrogate keys) en el proceso ETL
+
+ALTER TABLE linkproductocustomer
+ADD COLUMN surrogate_key INT AUTO_INCREMENT PRIMARY KEY;
+
 -- Actualizamos en la tabla original
 
 
