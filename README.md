@@ -23,18 +23,13 @@ Include the following tables:
    
 ## Requirements:
 •	Utilize SQL to create the tables according to the Data Vault modeling approach.
-
 •	Ensure proper indexing for performance optimization.
-
 •	Incorporate mechanisms for tracking historical changes to customer and product attributes.
-
 •	Define primary and foreign key constraints to maintain data integrity.
 
 ## Additional Evaluation Criteria:
 
 •	Appropriateness and completeness of the Data Vault modeling approach.
-
 •	Correctness and efficiency of the SQL scripts, including scalability considerations.
-
 •	Handling of historical changes, data integrity constraints, error handling mechanisms, and GitHub integration.
 •	Clarity and readability of the SQL code and accompanying documentation.
