@@ -1,11 +1,11 @@
--- Test: Inserta algunos datos de prueba en la tabla hubcustomer: 
+-- Test: Inserta algunos datos de prueba en la tabla satcustomer: 
 
 INSERT INTO hubcustomer (id_customer, hashkeycustomer, dt_load_date, recordsource)
 VALUES
     (1, 'A1B2C3D4E5F6G7H8I9J0K1L2M3N4O5P6', '2023-10-01 10:00:00', 'SourceA'),
     (2, 'P6O5N4M3L2K1J0I9H8G7F6E5D4C3B2A1', '2023-10-02 11:30:00', 'SourceB');
 
--- Test: Insertar Datos de Prueba en satClientes
+-- Test: Insertar Datos de Prueba en satcustomer
 
 INSERT INTO satcustomer (
     customer_id,
@@ -68,7 +68,6 @@ DELETE FROM satcustomer WHERE recordsource = 'TestSource';
 DELETE FROM hubcustomer WHERE hashkeycustomer IN ('1234567890abcdef1234567890abcdef', 'abcdef1234567890abcdef1234567890');
 
 -- Test: Implementación de SCD Tipo 2
-
 
 -- Paso 1: Actualizar el registro anterior para establecer la fecha de fin y marcarlo como no actual
 UPDATE satcustomer
